@@ -9,12 +9,12 @@ docker compose up --build -d
 ```
 2. Выполняем скрипт инициализации для сервера конфигурации и реплицированных шардов. 
 ```shell
-[./scripts/mongo_config-repl-shards-init.sh](scripts/mongo_config-repl-shards-init.sh)
+./scripts/mongo_config-repl-shards-init.sh
 ```
 
 3. Выполняем скрипты инициализации для роутера и заполнения шардированной коллекции `somedb.helloDoc`.
 ```shell
-[./mongo_router-sharded-data-init.sh](scripts/mongo_router-sharded-data-init.sh)
+./scripts/mongo_router-sharded-data-init.sh
 ```
 - скрипт также сразу вернет общее кол-во документов на всех шардах.
 
